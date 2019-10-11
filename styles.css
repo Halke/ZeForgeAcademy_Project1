@@ -1,3 +1,34 @@
+/*
+Segmenti koda pod oznakom @font-face koristeni su kako bi se u omogucila
+upotreba 2 fonta koja nisu default, ali koji se nalaze u lokalnom direktoriju.
+To su fontovi Montserrat i Satisfy.
+
+Na ovaj nacin fontovi ce se pravilno ucitaati na stranici i u slucaju da je
+HTML dokument pokrenut na uređaju koji nema pristup internetu.
+*/
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat-Regular.eot");
+    src: url("fonts/Montserrat-Regular.eot?#iefix") format('embedded-opentype'),
+         url("fonts/Montserrat-Regular.woff2") format('woff2'),
+         url("fonts/Montserrat-Regular.woff") format('woff'),
+         url("fonts/Montserrat-Regular.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Satisfy";
+    src: url("fonts/Satisfy-Regular.eot");
+    src: url("fonts/Satisfy-Regular.eot?#iefix") format('embedded-opentype'),
+         url("fonts/Satisfy-Regular.woff2") format('woff2'),
+         url("fonts/Satisfy-Regular.woff") format('woff'),
+         url("fonts/Satisfy-Regular.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Univerzalni selektor za sve HTML elemente*/
 *{
 	margin: 0;
 	padding: 0;
