@@ -1,0 +1,338 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #FCF6F5;
+	width: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+ul{
+	list-style: none;
+}
+
+li{
+	list-style-type: none;
+	display: inline;
+}
+
+header{
+	margin: 0 auto;
+	width: 80%;
+	height: 980px;
+	display: flex;
+	flex-direction: column;
+}
+
+.eco-logo{
+	width: 80%;
+	height: 20%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-family: 'Satisfy', cursive;
+	font-size: 35px;
+	color: #708238;
+}
+
+.eco-logo img{
+	height: 75%;
+	width: 150px;
+	margin-left: 110px;
+}
+
+nav{
+	height: 90px;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 1vw;
+	font-weight: 900;
+}
+
+
+
+nav ul{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 8px;
+}
+
+nav ul li{
+	padding: 30px 8px 27px 8px;
+}
+
+nav ul li:hover{
+	background-color: chartreuse;
+}
+
+.intro{
+	max-width: 100%;
+	min-height: 650px;
+	display: flex;
+	align-items: center;
+	background-image: url("images/intro-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+  background-position: center;
+	box-shadow: -8px 0px 8px 5px #ccc;
+	border-radius: 10px;
+}
+
+.intro-txt{
+	text-align: center;
+	color: #97BC62;
+	height: 100%;
+	width: 40%;
+	margin-left: 60%;
+	background-color: rgba(44, 95, 45, 0.8);
+	font-size: 1.5vw;
+	font-weight: 600;
+	border-radius: 15px;
+}
+
+.intro-txt h3{
+	font-size: 1.7vw;
+	line-height: 45px;
+	font-weight: bold;
+	padding-bottom: 15%;
+}
+
+.readmore-btn{
+	text-align: center;
+	background-color: white;
+	color: saddlebrown;
+	font-size: 1vw;
+	width: 30%;
+	margin: 15px;
+	padding: 10px;
+	float: left;
+}
+
+.sect-about{
+	width: 85%;
+	height: 1000px;
+	margin: 30px auto;
+	display: flex;
+	flex-direction: column;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.sect-about h2{
+	width: 100%;
+	height: 10%;
+	font-size: 1.7vw;
+	text-align: center;
+	padding: 35px 0px;
+	border-bottom: 3px solid lightblue;
+	margin-bottom: 35px;
+}
+
+.subsect1-about{
+	height: 40%;
+	width: 100%;
+	background-color: aquamarine;
+	background-image: url("images/sectAbout-poster211.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: -190px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	box-shadow: -8px 0px 8px 8px #ddd;
+}
+
+.textbox-about{
+	width: 100%;
+	height: 15%;
+	background-color: aquamarine;
+	text-align: center;
+	box-shadow: -8px 0px 8px 8px #ddd;
+}
+
+.textbox-btn{
+	font-weight: bold;
+	color: saddlebrown;
+	line-height: 30px;
+}
+
+.textbox-btn:hover{
+	text-decoration: underline;
+}
+
+.textbox-about h3{
+	padding: 15px;
+}
+
+.textbox-about p{
+	text-align: center;
+}
+
+.textbox-about p span{
+	padding-bottom: 20px;
+}
+
+.subsect2-about{
+	height: 35%;
+	width: 100%;
+	background-color: aquamarine;
+	background-image: url("images/sect2About-poster.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: -230px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	box-shadow: -8px 5px 8px 5px #ddd;
+}
+
+.sect-recycling{
+	max-width: 100%;
+	max-height: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	flex-shrink: 1;
+	margin-top: 60px;
+	background-color: #101820;
+	border-radius: 30px;
+	align-items: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: #FEE715;
+	text-align: center;
+}
+
+.rec-logo img{
+	width: 80%;
+	height: 80%;
+	padding: 30px;
+}
+
+.threats-sect{
+	min-height: 800px;
+	max-height: 1300px;
+	width: 80%;
+	margin: 60px auto 0px auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	align-self: center;
+	background-color: #89ABE3;
+	color: #FCF6F5;
+	border-radius: 15px;
+	box-shadow: -8px 8px 8px 8px #ddd;
+}
+
+.threats-sect div{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.threats-paragraph{
+	width: 30%;
+	height: 100%;
+	padding: 15px;
+	font-size: 1vw;
+	line-height: 25px;
+}
+
+.threats-img{
+	width: 60%;
+	height: 50%;
+	border: 5px solid #FCF6F5;
+	border-radius: 5px;
+}
+
+.threats-header{
+	width: 100%;
+	height: 10%;
+	font-size: 1.3vw;
+	text-align: center;
+	padding: 35px 0px;
+	border-bottom: 3px solid lightblue;
+	margin-bottom: 35px;
+}
+
+.sect2-threats{
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+.contact-footer{
+	margin-top: 100px;
+	height: 700px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.contact-header{
+	text-align: center;
+	margin-bottom: 15px;
+	font-size: 1.5vw;
+}
+
+.arrow-down{
+	font-weight: bold;
+	font-size: 1.5vw;
+}
+
+.contact-info{
+	height: 200px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;;
+	align-items: center;
+	background-color: #101820;
+	color: #FCF6F5;
+}
+
+.fot-info h4{
+	padding: 10px;
+}
+
+.donation-btn a{
+	padding: 15px;
+	width: 200px;
+	height: 80px;
+	background-color: #FCF6F5;
+	color: #101820;
+	border-radius: 20px;
+	font-size: 1.2vw;
+	font-weight: bold;
+}
+
+.donation-btn a:hover{
+	background-color: #F2AA4C;
+	color: #101820;
+}
+
+.back-to-top{
+	position: fixed;
+	right: 2%;
+	bottom: 15px;
+	width: 60px;
+	height: 60px;
+	background-color: rgba(0, 0, 0, 0.7);
+	text-align: center;
+	align-items: center;
+	font-size: 50px;
+	color: rgba(255, 255, 255, 0.7);
+	border-radius: 10px;
+}
